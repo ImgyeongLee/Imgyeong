@@ -1,4 +1,4 @@
-import { DataType, Project } from '../type/types';
+import { DataType, ProjectType } from '../type/types';
 
 export const professionalProject: DataType[] = [
     { title: 'Adventure AI', description: 'AIAIAIAI', image: 'image 0', position: 1 },
@@ -14,7 +14,7 @@ export const professionalProject: DataType[] = [
     },
 ];
 
-export const allProjects: Project[] = [
+export const allProjects: ProjectType[] = [
     { id: 0, title: 'Adventure AI', description: 'AIAIAIAI', src: '/test.png' },
     {
         id: 1,

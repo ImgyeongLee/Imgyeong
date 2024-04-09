@@ -5,7 +5,8 @@ export type DataType = {
     position: number;
 };
 
-export type Project = {
+export type ProjectType = {
+    id: number;
     title: string;
     description: string;
     src: string;
