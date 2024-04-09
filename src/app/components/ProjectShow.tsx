@@ -3,16 +3,26 @@
 import { GrNext, GrPrevious } from 'react-icons/gr';
 import ProjectCard from './ProjectCard';
 import { MouseEventHandler, useState } from 'react';
+import { professionalProject } from '../data/project';
+import { DataType } from '../type/types';
 
 export default function ProjectShow() {
-    const [testData, setTestData] = useState<number[]>([1, 2, 3, 4, 5]);
+    const [testData, setTestData] = useState<DataType[]>(professionalProject);
 
     const handleClickNext: MouseEventHandler<HTMLButtonElement> = (e) => {
         e.preventDefault();
         setTestData((prevData) => {
             const newData = [...prevData];
             const data = newData.shift();
-            if (data) newData.push(data);
+            if (data) {
+                newData.push(data);
+                for (let i = 0; i < 5; i++) {
+                    newData[i].position += 1;
+                    if (newData[i].position > 5) {
+                        newData[i].position -= 5;
+                    }
+                }
+            }
             return newData;
         });
     };
@@ -22,7 +32,15 @@ export default function ProjectShow() {
         setTestData((prevData) => {
             const newData = [...prevData];
             const data = newData.pop();
-            if (data) newData.unshift(data);
+            if (data) {
+                newData.push(data);
+                for (let i = 0; i < 5; i++) {
+                    newData[i].position -= 1;
+                    if (newData[i].position < 1) {
+                        newData[i].position += 5;
+                    }
+                }
+            }
             return newData;
         });
     };
@@ -42,6 +60,16 @@ export default function ProjectShow() {
                     <GrNext />
                 </button>
             </div>
+            {testData.map((data) => {
+                if (data.position == 3) {
+                    return (
+                        <>
+                            <div className="font-bold text-[calc(1em+1vw)] mt-6">{data.title}</div>
+                            <div className="mt-4">{data.description}</div>
+                        </>
+                    );
+                }
+            })}
         </>
     );
 }

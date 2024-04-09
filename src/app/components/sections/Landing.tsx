@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { MdOutlineHorizontalRule } from 'react-icons/md';
 
 export default function Landing() {
     return (
@@ -17,8 +18,10 @@ export default function Landing() {
                 <div className="font-semibold text-right">Web Developer</div>
             </div>
             <div className="font-semibold col-span-3 row-start-2 row-end-3 flex flex-col items-center justify-center">
-                <div className="text-[calc(2vw+0.8em)]">
-                    Hello! My name is <span className="text-leeim-mint">Imgyeong Lee</span>
+                <div className="text-[calc(2vw+0.8em)] flex flex-row items-center">
+                    <MdOutlineHorizontalRule className="text-leeim-mint mr-2" />
+                    Hello! My name is <span className="text-leeim-mint">&nbsp;Imgyeong Lee</span>
+                    <MdOutlineHorizontalRule className="text-leeim-mint ml-2" />
                 </div>
                 <div className=" font-light">I love coding, building something, and helping people!</div>
             </div>

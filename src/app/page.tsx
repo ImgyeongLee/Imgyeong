@@ -4,6 +4,7 @@ import Contact from './components/sections/Contact';
 import Experience from './components/sections/Experience';
 import Landing from './components/sections/Landing';
 import Music from './components/sections/Music';
+import Personal from './components/sections/Personal';
 import Project from './components/sections/Project';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
             <Landing />
             <Experience />
             <Project />
+            <Personal />
             <Contact />
         </>
     );
