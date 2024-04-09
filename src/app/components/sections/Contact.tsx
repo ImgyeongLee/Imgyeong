@@ -4,11 +4,20 @@ import { IoMail } from 'react-icons/io5';
 import data from '../../data/contact.json';
 import Link from 'next/link';
 import Footer from '../Footer';
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/app/utils/motion';
 
 export default function Contact() {
     return (
         <div className="h-screen w-screen flex flex-col gap-9 justify-center items-center">
-            <div className="font-semibold text-[calc(1em+3.2vw)] text-center text-leeim-mint select-none">Contact</div>
+            <motion.div
+                className="font-semibold text-[calc(1em+3.2vw)] text-center text-leeim-mint select-none"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn(0.3)}>
+                Contact
+            </motion.div>
             <div className="flex flex-row justify-center items-center gap-9">
                 <Link
                     href={data['github']}

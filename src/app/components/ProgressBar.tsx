@@ -1,27 +1,17 @@
 'use client';
-
-import { useEffect, useState } from 'react';
+import { motion, useSpring, useScroll } from 'framer-motion';
 
 export default function ProgressBar() {
-    const [scrollTop, setScrollTop] = useState<number>(0);
-
-    const onScroll = () => {
-        const winScroll = document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        setScrollTop(scrolled);
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', onScroll);
-        return () => window.removeEventListener('scroll', onScroll);
-    }, []);
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001,
+    });
 
     return (
-        <div className="fixed w-full top-0 z-[100]">
-            <div className="w-full h-2 bg-transparent">
-                <div className="h-2 bg-leeim-mint" style={{ width: `${scrollTop}%` }}></div>
-            </div>
-        </div>
+        <motion.div
+            className="fixed w-full top-0 left-0 z-[100] h-2 bg-leeim-mint origin-left"
+            style={{ scaleX }}></motion.div>
     );
 }

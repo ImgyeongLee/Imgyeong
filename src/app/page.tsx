@@ -1,4 +1,5 @@
-import Footer from './components/Footer';
+'use client';
+
 import ProgressBar from './components/ProgressBar';
 import Contact from './components/sections/Contact';
 import Experience from './components/sections/Experience';
@@ -9,7 +10,7 @@ import Project from './components/sections/Project';
 
 export default function Home() {
     return (
-        <>
+        <main className="h-full w-full">
             <ProgressBar />
             <Music />
             <Landing />
@@ -17,6 +18,6 @@ export default function Home() {
             <Project />
             <Personal />
             <Contact />
-        </>
+        </main>
     );
 }

@@ -3,6 +3,8 @@
 import { MouseEventHandler, useState } from 'react';
 import { cn } from '@/lib/tailwind-utils';
 import { MdOutlineHorizontalRule } from 'react-icons/md';
+import { motion } from 'framer-motion';
+import { slideInFromRight } from '@/app/utils/motion';
 import React from 'react';
 
 export default function Experience() {
@@ -12,7 +14,13 @@ export default function Experience() {
         if (section == 'Experience') {
             return (
                 <React.Fragment>
-                    <div className="flex flex-col border border-leeim-mint p-6 rounded-xl  overflow-y-auto">
+                    <motion.div
+                        key={section}
+                        className="flex flex-col border border-leeim-mint p-6 rounded-xl  overflow-y-auto"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={slideInFromRight(0.2)}>
                         <div className="text-leeim-mint font-bold text-[calc(1.2vw+0.8em)] flex flex-row items-center">
                             Experience
                             <MdOutlineHorizontalRule className="ml-3" />
@@ -56,13 +64,19 @@ export default function Experience() {
                                 skills and abilities to utilize the tools such as gdb and valgrind.
                             </li>
                         </ul>
-                    </div>
+                    </motion.div>
                 </React.Fragment>
             );
         } else if (section == 'Awards') {
             return (
                 <React.Fragment>
-                    <div className="flex flex-col border border-leeim-mint p-6 rounded-xl  overflow-y-auto">
+                    <motion.div
+                        key={section}
+                        className="flex flex-col border border-leeim-mint p-6 rounded-xl  overflow-y-auto"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={slideInFromRight(0.2)}>
                         <div className="text-leeim-mint font-bold text-[calc(1.2vw+0.8em)] flex flex-row items-center">
                             Awards
                             <MdOutlineHorizontalRule className="ml-3" />
@@ -72,19 +86,19 @@ export default function Experience() {
                             Placed at <span className="text-leeim-mint">2nd prize &#40;Runner-up&#41;</span> in the 2023
                             AWS Amplify Studio Hackathon.
                         </div>
-                        <div className="italic text-xs pt-1 pb-3">Post Link:</div>
+                        <div className="italic text-xs pb-4">Post Link:</div>
                         <div className="font-bold text-[calc(0.4vw+0.8em)]">2023 Fall BeaverHacks Hackathon</div>
                         <div>
                             Placed at <span className="text-leeim-mint">1st prize</span> in the 2023 Fall BeaverHacks
                             Hackathon.
                         </div>
-                        <div className="italic text-xs pt-1 pb-3">Post Link:</div>
+                        <div className="italic text-xs pb-4">Post Link:</div>
                         <div className="font-bold text-[calc(0.4vw+0.8em)]">2023 OpenCV Hackathon</div>
                         <div>
                             Selected <span className="text-leeim-mint">the most popular finalist project </span>in the
                             2023 OpenCV Hackathon
                         </div>
-                        <div className="italic text-xs pt-1 pb-3">Post Link:</div>
+                        <div className="italic text-xs pb-4">Post Link:</div>
                         <div className="font-bold text-[calc(0.4vw+0.8em)]">Hall of Fame for Web/Mobile App Dev</div>
                         <div>
                             Nominated for the Hall of Fame in{' '}
@@ -92,8 +106,8 @@ export default function Experience() {
                             <span className="text-leeim-mint">Mobile Application Development</span> class for
                             exceptional work on the projects.
                         </div>
-                        <div className="italic text-xs pt-1 pb-3">Post Link:</div>
-                    </div>
+                        <div className="italic text-xs pb-4">Post Link:</div>
+                    </motion.div>
                 </React.Fragment>
             );
         }
@@ -105,7 +119,7 @@ export default function Experience() {
         setSection(value);
     };
     return (
-        <div className="h-screen w-screen select-none p-[4vw] flex flex-row justify-center">
+        <div className="h-screen w-screen select-none p-[4vw] flex flex-col justify-center md:flex-row">
             <div className="font-semibold leading-tight flex flex-col text-[calc(3.5vw+0.8em)] flex-1 justify-center">
                 <div className="pl-[2vw] border-l-4 border-leeim-mint ">Aiming for</div>
                 <div className="pl-[2vw] border-l-4 border-leeim-mint ">

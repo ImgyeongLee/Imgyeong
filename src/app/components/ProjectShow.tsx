@@ -48,25 +48,29 @@ export default function ProjectShow() {
     return (
         <>
             <div className="flex flex-row justify-center px-9">
-                <button className="z-50" onClick={handleClickPrev}>
-                    <GrPrevious />
-                </button>
                 <div className="flex flex-row items-center h-[calc(400px+1.5vh)] bg-blue-500">
                     {testData.map((data, i) => {
                         return <ProjectCard key={i} data={data} index={i + 1} />;
                     })}
                 </div>
-                <button className="z-50" onClick={handleClickNext}>
-                    <GrNext />
-                </button>
             </div>
-            {testData.map((data) => {
+            {testData.map((data, i) => {
                 if (data.position == 3) {
                     return (
-                        <>
-                            <div className="font-bold text-[calc(1em+1vw)] mt-6">{data.title}</div>
-                            <div className="mt-4">{data.description}</div>
-                        </>
+                        <div key={i} className="flex flex-row justify-center items-center w-screen">
+                            <button className="z-50 absolute left-[2vw] text-[calc(2vw+1em)]" onClick={handleClickPrev}>
+                                <GrPrevious />
+                            </button>
+                            <div>
+                                <div className="font-bold text-[calc(1em+1vw)] mt-6 text-center">{data.title}</div>
+                                <div className="mt-4 text-center px-6">{data.description}</div>
+                            </div>
+                            <button
+                                className="z-50 absolute right-[2vw] text-[calc(2vw+1em)]"
+                                onClick={handleClickNext}>
+                                <GrNext />
+                            </button>
+                        </div>
                     );
                 }
             })}
