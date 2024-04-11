@@ -84,7 +84,7 @@ export const allProjects: ProjectType[] = [
       title: "SoundConductor",
       description:
          "Welcome to Sound Conductor! This project is an application that allows users to control their IoT devices using custom sounds. Control your house by clapping or yelling!",
-      src: "/soundconductor.png",
+      src: "/soundconductor.PNG",
       github: "https://github.com/Sankalpsp21/SoundConductor",
       link: "https://sound-conductor-4bsnr75vpq-uc.a.run.app/",
    },
@@ -95,7 +95,7 @@ export const allProjects: ProjectType[] = [
       title: "Portfolio website (old)",
       description:
          "My second React project. Won the first prize at a 10-week long portfolio competition from OSU App Club!",
-      src: "/oldportfolio.png",
+      src: "/oldportfolio.PNG",
       link: "https://imgyeong-lee-portfolio-website.vercel.app/",
    },
    { id: 10, title: "Toygether", description: "", src: "/toygether.png" },
