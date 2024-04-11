@@ -18,34 +18,34 @@ export default function Contact() {
                 variants={fadeIn(0.3)}>
                 Contact
             </motion.div>
-            <div className="flex flex-row justify-center items-center gap-9">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-9">
                 <Link
                     href={data['github']}
                     target="_blank"
-                    className="hover:text-leeim-mint hover:scale-105 transition ease-in-out text-[calc(2em+6vw)]">
+                    className="hover:text-leeim-mint hover:scale-105 transition ease-in-out text-[calc(3em+6vw)]">
                     <FaGithub />
                 </Link>
                 <Link
                     href={data['linkedin']}
                     target="_blank"
-                    className="hover:text-leeim-mint hover:scale-105 transition ease-in-out text-[calc(2em+6vw)]">
+                    className="hover:text-leeim-mint hover:scale-105 transition ease-in-out text-[calc(3em+6vw)]">
                     <FaLinkedin />
                 </Link>
                 <Link
                     href={data['twitter']}
                     target="_blank"
-                    className="hover:text-leeim-mint hover:scale-105 transition ease-in-out text-[calc(2em+6vw)]">
+                    className="hover:text-leeim-mint hover:scale-105 transition ease-in-out text-[calc(3em+6vw)]">
                     <FaXTwitter />
                 </Link>
                 <Link
                     href={data['instagram']}
                     target="_blank"
-                    className="hover:text-leeim-mint hover:scale-105 transition ease-in-out text-[calc(2em+6vw)]">
+                    className="hover:text-leeim-mint hover:scale-105 transition ease-in-out text-[calc(3em+6vw)]">
                     <FaInstagram />
                 </Link>
                 <Link
                     href={`mailto:${data['email']}`}
-                    className="hover:text-leeim-mint hover:scale-105 transition ease-in-out text-[calc(2em+6vw)]">
+                    className="hover:text-leeim-mint hover:scale-105 transition ease-in-out text-[calc(3em+6vw)]">
                     <IoMail />
                 </Link>
             </div>

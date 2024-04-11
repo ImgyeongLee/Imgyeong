@@ -119,7 +119,7 @@ export default function Experience() {
         setSection(value);
     };
     return (
-        <div className="h-screen w-screen select-none p-[4vw] flex flex-col justify-center md:flex-row">
+        <div className="min-h-[100vh] h-full w-screen select-none p-[4vw] flex flex-col justify-center md:flex-row">
             <div className="font-semibold leading-tight flex flex-col text-[calc(3.5vw+0.8em)] flex-1 justify-center">
                 <div className="pl-[2vw] border-l-4 border-leeim-mint ">Aiming for</div>
                 <div className="pl-[2vw] border-l-4 border-leeim-mint ">
