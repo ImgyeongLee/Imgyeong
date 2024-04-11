@@ -75,17 +75,12 @@ export const allProjects: ProjectType[] = [
    {
       id: 5,
       title: "Portfolio website (new)",
-      description: "",
+      description:
+         "Re-built the personal portfolio website with Next.js and Typescript!",
       src: "/newportfolio.png",
    },
    {
       id: 6,
-      title: "GitHub Rewards Program",
-      description: "AIAIAIAI",
-      src: "/test.png",
-   },
-   {
-      id: 7,
       title: "SoundConductor",
       description:
          "Welcome to Sound Conductor! This project is an application that allows users to control their IoT devices using custom sounds. Control your house by clapping or yelling!",
@@ -93,20 +88,28 @@ export const allProjects: ProjectType[] = [
       github: "https://github.com/Sankalpsp21/SoundConductor",
       link: "https://sound-conductor-4bsnr75vpq-uc.a.run.app/",
    },
-   { id: 8, title: "ObjectHunt", description: "", src: "/test.png" },
-   { id: 9, title: "BioReact", description: "", src: "/test.png" },
+   { id: 7, title: "ObjectHunt", description: "", src: "/objecthunt.png" },
+   { id: 8, title: "BioReact", description: "", src: "/bioreact.png" },
    {
-      id: 10,
+      id: 9,
       title: "Portfolio website (old)",
-      description: "",
+      description:
+         "My second React project. Won the first prize at a 10-week long portfolio competition from OSU App Club!",
       src: "/oldportfolio.png",
+      link: "https://imgyeong-lee-portfolio-website.vercel.app/",
    },
-   { id: 11, title: "Toygether", description: "", src: "/test.png" },
-   { id: 12, title: "ToDoon", description: "", src: "/todoon.png" },
-   { id: 13, title: "Litania", description: "", src: "/test.png" },
+   { id: 10, title: "Toygether", description: "", src: "/test.png" },
+   { id: 11, title: "ToDoon", description: "", src: "/todoon.png" },
+   { id: 12, title: "Litania", description: "", src: "/test.png" },
+   {
+      id: 13,
+      title: "Mastodon Bot Template",
+      description: "",
+      src: "/test.png",
+   },
    {
       id: 14,
-      title: "Automated Bot Template",
+      title: "Discord Bot Template",
       description: "",
       src: "/test.png",
    },
