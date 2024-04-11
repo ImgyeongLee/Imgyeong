@@ -58,7 +58,7 @@ export const allProjects: ProjectType[] = [
       title: "AI Gesture Art",
       description:
          "Create stunning visuals from dynamic hand gestures with built-in sketch autocompletion and AI art generation driven by OpenCV.",
-      src: "/test.png",
+      src: "/aigestureart.png",
       github: "https://github.com/tobyloki/OpenCVApp",
       link: "https://www.hackster.io/hackathoners/ai-gesture-art-d36827",
    },
@@ -84,7 +84,7 @@ export const allProjects: ProjectType[] = [
       title: "SoundConductor",
       description:
          "Welcome to Sound Conductor! This project is an application that allows users to control their IoT devices using custom sounds. Control your house by clapping or yelling!",
-      src: "/test.png",
+      src: "/soundconductor.png",
       github: "https://github.com/Sankalpsp21/SoundConductor",
       link: "https://sound-conductor-4bsnr75vpq-uc.a.run.app/",
    },
@@ -98,19 +98,19 @@ export const allProjects: ProjectType[] = [
       src: "/oldportfolio.png",
       link: "https://imgyeong-lee-portfolio-website.vercel.app/",
    },
-   { id: 10, title: "Toygether", description: "", src: "/test.png" },
+   { id: 10, title: "Toygether", description: "", src: "/toygether.png" },
    { id: 11, title: "ToDoon", description: "", src: "/todoon.png" },
-   { id: 12, title: "Litania", description: "", src: "/test.png" },
+   { id: 12, title: "Litania", description: "", src: "/litania.png" },
    {
       id: 13,
       title: "Mastodon Bot Template",
       description: "",
-      src: "/test.png",
+      src: "/mastodonbot.png",
    },
    {
       id: 14,
       title: "Discord Bot Template",
       description: "",
-      src: "/test.png",
+      src: "/discordbot.png",
    },
 ];
