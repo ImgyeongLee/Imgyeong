@@ -16,7 +16,7 @@ export default function Personal() {
                 variants={fadeIn(0.3)}>
                 All Projects
             </motion.div>
-            <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10 justify-center items-center flex-wrap">
+            <div className="h-full w-full flex flex-row gap-10 px-10 justify-center items-stretch flex-wrap">
                 {allProjects.map((project, i) => {
                     return (
                         <ProjectListCard

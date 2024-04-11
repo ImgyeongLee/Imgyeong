@@ -1,8 +1,11 @@
 export type DataType = {
+    id: number;
     title: string;
     description: string;
-    image: string;
+    src: string;
     position: number;
+    github?: string;
+    link?: string;
 };
 
 export type ProjectType = {

@@ -8,7 +8,7 @@ import { projectCardVariants } from '../utils/motion';
 export default function ProjectListCard({ id, title, description, src }: ProjectType) {
     return (
         <motion.div
-            className="relative overflow-hidden rounded-lg shadow-lg border border-leeim-mint min-w-[320px] flex-grow-0 flex-shrink-0 basis-[30%]"
+            className="relative overflow-hidden rounded-lg shadow-lg border border-leeim-mint min-w-[320px] flex-grow-0 flex-shrink-0 basis-[30%] grid"
             variants={projectCardVariants}
             initial="initial"
             whileInView="animate"

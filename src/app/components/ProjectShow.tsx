@@ -17,10 +17,7 @@ export default function ProjectShow() {
             if (data) {
                 newData.push(data);
                 for (let i = 0; i < 5; i++) {
-                    newData[i].position += 1;
-                    if (newData[i].position > 5) {
-                        newData[i].position -= 5;
-                    }
+                    newData[i].position = i + 1;
                 }
             }
             return newData;
@@ -31,14 +28,11 @@ export default function ProjectShow() {
         e.preventDefault();
         setTestData((prevData) => {
             const newData = [...prevData];
-            const data = newData.pop();
-            if (data) {
-                newData.push(data);
+            const lastData = newData.pop();
+            if (lastData) {
+                newData.unshift(lastData);
                 for (let i = 0; i < 5; i++) {
-                    newData[i].position -= 1;
-                    if (newData[i].position < 1) {
-                        newData[i].position += 5;
-                    }
+                    newData[i].position = i + 1;
                 }
             }
             return newData;
@@ -50,7 +44,7 @@ export default function ProjectShow() {
             <div className="flex flex-row justify-center px-9">
                 <div className="flex flex-row items-center h-[calc(400px+1.5vh)] bg-blue-500">
                     {testData.map((data, i) => {
-                        return <ProjectCard key={i} data={data} index={i + 1} />;
+                        return <ProjectCard key={data.id} data={data} index={i + 1} />;
                     })}
                 </div>
             </div>
