@@ -18,15 +18,7 @@ export default function Personal() {
             </motion.div>
             <div className="h-full w-full flex flex-row gap-10 px-10 justify-center items-stretch flex-wrap">
                 {allProjects.map((project, i) => {
-                    return (
-                        <ProjectListCard
-                            key={i}
-                            id={project.id}
-                            title={project.title}
-                            description={project.description}
-                            src={project.src}
-                        />
-                    );
+                    return <ProjectListCard key={i} project={project} />;
                 })}
             </div>
         </div>

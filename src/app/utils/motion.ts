@@ -26,6 +26,20 @@ export function slideInFromRight(delay: number) {
     };
 }
 
+export const slideInFromBottom = {
+    initial: {
+        opacity: 0,
+        y: 50,
+    },
+    animate: (delay: number) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: 0.1 * delay,
+        },
+    }),
+};
+
 export function fadeIn(delay: number) {
     return {
         hidden: {
