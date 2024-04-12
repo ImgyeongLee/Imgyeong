@@ -6,6 +6,7 @@ import { MdOutlineHorizontalRule } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import { slideInFromRight } from '@/app/utils/motion';
 import React from 'react';
+import Link from 'next/link';
 
 export default function Experience() {
     const [section, setSection] = useState<string>('Experience');
@@ -86,19 +87,29 @@ export default function Experience() {
                             Placed at <span className="text-leeim-mint">2nd prize &#40;Runner-up&#41;</span> in the 2023
                             AWS Amplify Studio Hackathon.
                         </div>
-                        <div className="italic text-xs pb-4">Post Link:</div>
+                        <Link
+                            className="italic text-xs pb-4"
+                            href={'https://hackathoners0.hashnode.dev/are-you-smarter-than-ai'}>
+                            Post Link
+                        </Link>
                         <div className="font-bold text-[calc(0.4vw+0.8em)]">2023 Fall BeaverHacks Hackathon</div>
                         <div>
                             Placed at <span className="text-leeim-mint">1st prize</span> in the 2023 Fall BeaverHacks
                             Hackathon.
                         </div>
-                        <div className="italic text-xs pb-4">Post Link:</div>
+                        <Link className="italic text-xs pb-4" href={'https://devpost.com/software/syllabot-1dxsil'}>
+                            Post Link
+                        </Link>
                         <div className="font-bold text-[calc(0.4vw+0.8em)]">2023 OpenCV Hackathon</div>
                         <div>
                             Selected <span className="text-leeim-mint">the most popular finalist project </span>in the
                             2023 OpenCV Hackathon
                         </div>
-                        <div className="italic text-xs pb-4">Post Link:</div>
+                        <Link
+                            className="italic text-xs pb-4"
+                            href={'https://www.hackster.io/hackathoners/ai-gesture-art-d36827'}>
+                            Post Link
+                        </Link>
                         <div className="font-bold text-[calc(0.4vw+0.8em)]">Hall of Fame for Web/Mobile App Dev</div>
                         <div>
                             Nominated for the Hall of Fame in{' '}
@@ -106,7 +117,18 @@ export default function Experience() {
                             <span className="text-leeim-mint">Mobile Application Development</span> class for
                             exceptional work on the projects.
                         </div>
-                        <div className="italic text-xs pb-4">Post Link:</div>
+                        <div className="flex flex-row">
+                            <Link
+                                className="italic text-xs mr-4"
+                                href={'https://web.engr.oregonstate.edu/~hessro/teaching/hof/cs494#w23'}>
+                                Post Link 1
+                            </Link>
+                            <Link
+                                className="italic text-xs pb-4"
+                                href={'https://web.engr.oregonstate.edu/~hessro/teaching/hof/cs492#w23'}>
+                                Post Link 2
+                            </Link>
+                        </div>
                     </motion.div>
                 </React.Fragment>
             );

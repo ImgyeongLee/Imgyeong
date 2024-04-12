@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 export default function Landing() {
     return (
         <div
-            className="h-screen w-screen grid grid-cols-[1fr_3fr_1fr] grid-rows-[1.5fr_1fr_1.5fr] select-none scroll-smooth overflow-x-hidden"
+            className="min-h-[100vh] h-full w-screen grid grid-cols-[1fr_3fr_1fr] grid-rows-[1.5fr_1fr_1.5fr] select-none scroll-smooth overflow-x-hidden"
             id="landing">
             <div className="col-start-1 col-end-2 row-start-1 row-end-2 px-4 py-8">
                 <Image

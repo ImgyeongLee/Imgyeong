@@ -60,6 +60,7 @@ export const allProjects: ProjectType[] = [
         src: '/adventureAI.png',
         github: 'https://github.com/ImgyeongLee/AdventureAI',
         link: 'https://adventure-ai.vercel.app/',
+        stack: 'React, TypeScript, Convex, OpenAI, DALL-E',
     },
     {
         id: 1,
@@ -69,6 +70,7 @@ export const allProjects: ProjectType[] = [
         src: '/syllabot.png',
         github: 'https://github.com/Nyumat/Syllabot?tab=readme-ov-file',
         link: 'https://devpost.com/software/syllabot-1dxsil',
+        stack: 'React, TypeScript, MongoDB, OpenAI, Pinecone',
     },
     {
         id: 2,
@@ -78,6 +80,7 @@ export const allProjects: ProjectType[] = [
         src: '/aigestureart.png',
         github: 'https://github.com/tobyloki/OpenCVApp',
         link: 'https://www.hackster.io/hackathoners/ai-gesture-art-d36827',
+        stack: 'Kotlin, Android Studio, OpenCV, Jetpack Compose',
     },
     {
         id: 3,
@@ -87,19 +90,23 @@ export const allProjects: ProjectType[] = [
         src: '/areyousmarterthanai.png',
         github: 'https://github.com/Sankalpsp21/Smarter-Than-AI',
         link: 'https://hackathoners0.hashnode.dev/are-you-smarter-than-ai',
+        stack: 'React, JavaScript, TypeScript, AWS Amplify Studio, GraphQL, OpenAI',
     },
     {
         id: 4,
         title: 'FHIRType API',
         description:
             'The FHIRType API serves consistently formatted healthcare provider data from numerous FHIR Standard endpoints. ',
-        src: '/test.png',
+        src: '/fhir.png',
+        stack: 'Python, Swagger UI, React, PostgreSQL, GitHub Actions',
     },
     {
         id: 5,
         title: 'Portfolio website (new)',
         description: 'Re-built the personal portfolio website with Next.js and Typescript!',
         src: '/newportfolio.png',
+        github: 'https://github.com/ImgyeongLee/Imgyeong',
+        stack: 'Next.js, TypeScript',
     },
     {
         id: 6,
@@ -109,6 +116,7 @@ export const allProjects: ProjectType[] = [
         src: '/soundconductor.PNG',
         github: 'https://github.com/Sankalpsp21/SoundConductor',
         link: 'https://sound-conductor-4bsnr75vpq-uc.a.run.app/',
+        stack: 'React, TypeScript, MongoDB, Googld Cloud, SmartThings API, Tensorflow',
     },
     {
         id: 7,
@@ -116,6 +124,8 @@ export const allProjects: ProjectType[] = [
         description:
             'ObjectHunt is a fun and interactive two-player game that challenges players to find objects based on their name and location. ',
         src: '/objecthunt.png',
+        github: 'https://github.com/ImgyeongLee/ObjectHunt',
+        stack: 'Kotlin, Android Studio, Node.js, Express.js, Android ML kit, Socket.IO',
     },
     {
         id: 8,
@@ -123,6 +133,8 @@ export const allProjects: ProjectType[] = [
         description:
             'BioReact is a full-stack system for the BMES bioreactor. This contains both the frontend to control the machine and the backend that can handle the automation for it in a real-time.',
         src: '/bioreact.png',
+        github: 'https://github.com/ImgyeongLee/BioReact',
+        stack: 'React, JavaScript, Node.js, Express.js, Socket.IO',
     },
     {
         id: 9,
@@ -131,6 +143,7 @@ export const allProjects: ProjectType[] = [
             'My second React project. Won the first prize at a 10-week long portfolio competition from OSU App Club!',
         src: '/oldportfolio.PNG',
         link: 'https://imgyeong-lee-portfolio-website.vercel.app/',
+        stack: 'React, JavaScript, Redux, Three.js, TailwindCSS',
     },
     {
         id: 10,
@@ -138,6 +151,7 @@ export const allProjects: ProjectType[] = [
         description:
             'Toygether allows the students in Oregon State University to be able to seek teammates for their personal/toy projects. (We are building it right now!)',
         src: '/toygether.png',
+        stack: 'Next.js, TypeScript, TailwindCSS, Redux Toolkit, MongoDB',
     },
     {
         id: 11,
@@ -145,6 +159,7 @@ export const allProjects: ProjectType[] = [
         description:
             'Litania is my outsourcing product. This website allows the user to buy the items and to do battles with their original characters! (Still in progress!)',
         src: '/litania.png',
+        stack: 'React, Convex, TypeScript, Redux, TailwindCSS, MongoDB',
     },
     {
         id: 12,
@@ -152,6 +167,9 @@ export const allProjects: ProjectType[] = [
         description:
             'This bot template is for people who are not familiar with coding at all. Currently over 150 people have used this! This is integrated with Google Spreadsheet API.',
         src: '/mastodonbot.png',
+        github: 'https://github.com/ImgyeongLee/MastodonBot',
+        link: 'https://x.com/DONTEXIST_3/status/1719272573446529149',
+        stack: 'Python, Google Spreadsheet API, Mastodon API',
     },
     {
         id: 13,
@@ -159,5 +177,8 @@ export const allProjects: ProjectType[] = [
         description:
             'This bot template is also for people who are not used to coding. This is integrated with Google Spreadsheet API.',
         src: '/discordbot.png',
+        github: 'https://github.com/ImgyeongLee/DiscordBot',
+        link: 'https://x.com/DONTEXIST_3/status/1725120780705603766',
+        stack: 'JavaScript, Google Spreadsheet API, Discord API',
     },
 ];

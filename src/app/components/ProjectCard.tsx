@@ -16,7 +16,7 @@ export default function ProjectCard({ data }: ProjectCardProps) {
                 {
                     'opacity-30 scale-75 left-[20%] translate-x-[-50%] z-10': data.position == 1,
                     'opacity-80 left-[35%] translate-x-[-50%] z-30 ': data.position == 2,
-                    'opacity-100 scale-125 shadow-xl translate-x-[-50%] z-40 ': data.position == 3,
+                    'opacity-100 scale-125 translate-x-[-50%] z-40 ': data.position == 3,
                     'opacity-80 left-[65%] translate-x-[-50%] z-30 ': data.position == 4,
                     'opacity-30 scale-75 left-[80%] translate-x-[-50%] z-10 ': data.position == 5,
                 }

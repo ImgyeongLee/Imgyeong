@@ -13,6 +13,7 @@ export type ProjectType = {
     title: string;
     description: string;
     src: string;
+    stack: string;
     github?: string;
     link?: string;
 };

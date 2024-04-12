@@ -65,13 +65,15 @@ export default function ProjectShow() {
                                 viewport={{ once: true }}
                                 variants={slideInFromBottom}
                                 custom={0.5}>
-                                <div className="font-bold text-[calc(1em+1vw)] mt-6 text-center">{data.title}</div>
-                                <div className="mt-4 text-center px-6">{data.description}</div>
+                                <div className="font-bold text-[calc(1em+1vw)] mt-6 text-center text-leeim-mint">
+                                    {data.title}
+                                </div>
+                                <div className="mt-4 text-center px-6 mx-5">{data.description}</div>
                                 <div className="flex flex-row justify-center">
                                     {' '}
                                     {data.github && (
                                         <Link
-                                            className="mx-4 my-5 text-leeim-mint text-sm"
+                                            className="mx-4 my-5 text-sm hover:text-leeim-mint transition ease-in-out"
                                             href={data.github}
                                             target="_blank">
                                             Source Code
@@ -79,7 +81,7 @@ export default function ProjectShow() {
                                     )}
                                     {data.link && (
                                         <Link
-                                            className="mx-4 my-5 text-leeim-mint text-sm"
+                                            className="mx-4 my-5 text-sm hover:text-leeim-mint transition ease-in-out"
                                             href={data.link}
                                             target="_blank">
                                             Link

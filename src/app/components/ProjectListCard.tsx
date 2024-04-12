@@ -26,6 +26,7 @@ export default function ProjectListCard({ project }: ProjectListCardProps) {
             <div className="relative p-4">
                 <h1 className="text-2xl font-semibold text-leeim-mint">{project.title}</h1>
                 <p className="mt-2 text-leeim-white">{project.description}</p>
+                <p className="text-leeim-mint text-sm italic mt-2">{project.stack}</p>
                 <div className="flex flex-col md:flex-row gap-5 justify-center text-sm pt-3 ">
                     {project.github && (
                         <Link
